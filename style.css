@@ -253,12 +253,12 @@ a{
     position: absolute;
     top: 22px;
     right: 16px;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 50%;
     width: 37px;
     height: 37px;
     background: #244156;
-    padding: 23px 0 0 0;
+    padding: 21px 0 0 0;
     transition: all 0.3s ease 0s;
 }
 .main__btn-span{
@@ -798,6 +798,22 @@ a{
 }
 .main__hide.active{
     display: block;
+    height: 200px;
+    overflow-y: scroll;
+    width: 1194px;
+    margin: 0 auto;
+}
+.last__with-circle{
+    width: 236px;
+}
+.main__hide.active::-webkit-scrollbar {
+    width: 7px;
+    background-color: black;
+    left:-100px;
+}
+.main__hide.active::-webkit-scrollbar-thumb{
+    border: 3px solid #20BCC6;
+    border-radius: 3px;
 }
 .main__btn-connect{
     background: none;
@@ -820,6 +836,9 @@ a{
 .last__answer{
     margin: 0 26px 0 47px;
 }
+.last__line{
+    bottom: 1px;
+}
 /*адаптив*/
 @media(max-width:4000px){
     .main__tv__channels-info:nth-child(2){
@@ -830,6 +849,13 @@ a{
     }
 }
 @media(max-width:1212px){
+    .main__hide.active{
+        width: 965px;
+        overflow-x: clip;
+    }
+    .last__with-circle{
+        width: 242px;
+    }
     .main__your__tariff__plan-info {
         width: 713px;
     }
@@ -914,6 +940,10 @@ a{
     }
 }
 @media(max-width:978px){
+    .main__hide.active{
+        width: 546px;
+        padding: 0 9px 0 0;
+    }
     .main__df{
         display: flex;
         justify-content: space-evenly;
@@ -1225,8 +1255,15 @@ a{
     .main__ul {
         padding: 0 0 40px 0;
     }
+    .main__btn-triangle {
+        padding: 17px 0 0 0;
+    }
 }
 @media(max-width:600px){
+    .main__hide.active{
+        width: 330px;
+        padding: 0;
+    }
     .p{
         font-size: 14px;
     }
@@ -1324,22 +1361,22 @@ a{
         margin: 0 0 15px 0;
     }
     .main__with__list{
-        width: 328px;
+        width: 330px;
     }
     .main__numbers{
-        width: 328px;
+        width: 330px;
     }  
     .main__blue{
-        width: 328px;
+        width: 330px;
     }
     .main__black__blue{
-        width: 328px;
+        width: 330px;
     }
     .main__abs{
         right: 25px;
     }
     .main__info{
-        width: 328px;
+        width: 330px;
     }
     .btn__triangle{
         width: 29px;
@@ -1416,6 +1453,9 @@ a{
     }
     .circle__two-ans{
         padding: 0 14px 0 0;
+    }
+    .main__ul li{
+        font-size: 12px;
     }
 }
 /*подключение шрифтов*/

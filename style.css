@@ -152,6 +152,7 @@ a{
 .main__lvl-l button:hover,
 .main__lvl-m button:hover{
     background: #20BCC6;
+    color:#FFFFFF;
 }
 .main__lvl-s{
     border-top-left-radius: 8px;
